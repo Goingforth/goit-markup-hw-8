@@ -1,0 +1,69 @@
+// Модальное окно
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  @media screen and (max-width: $desktop-1) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
+
+  padding: 40px;
+  background-color: $color-white;
+
+  opacity: 1;
+
+  transition: transform $time-hover $time-function;
+}
+
+.backdrop--hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.modal__close {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  bottom: 6px;
+
+  border-radius: 15px;
+  border: 1px solid $color-border-close-modal;
+  background-color: $color-white;
+
+  cursor: pointer;
+
+  &--black {
+    margin: auto;
+    fill: $color-black;
+    transition: fill $time-hover $time-function;
+  }
+
+  &:hover &--black,
+  &:focus &--black {
+    fill: $color-accent;
+  }
+}
+
+.modal__header {
+  @media screen and (max-width: $desktop-1) {
+    margin-bottom: 26px;
+  }
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 12px;
+  }
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+// стилизация секции Особенности
+.differences {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__property {
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &__property {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+  }
+}
+
+.differences__property {
+  @media screen and (max-width: $tablet-1) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.differences__icon {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: $color-background-button-portfolio;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.differences__tytle {
+  @media screen and (max-width: $tablet-1) {
+    text-align: center;
+  }
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
+}
+
+.differences__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-text;
+}

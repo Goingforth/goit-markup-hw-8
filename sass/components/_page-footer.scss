@@ -1,0 +1,71 @@
+// -----   стилизуем footer----------
+.page-footer {
+  color: $color-white;
+  background-color: $color-background-footer;
+}
+.page-footer__container {
+  @media screen and (max-width: $tablet-1) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  position: relative;
+}
+.page-footer__logo {
+  display: inline-block;
+  color: inherit;
+  margin-bottom: 28px;
+}
+
+.box-address {
+  @media screen and (min-width: $tablet) and (max-width: $desktop-1) {
+    margin-left: 76px;
+    width: 232px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 232px;
+  }
+}
+//
+.box-social {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: $tablet-1) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop-1) {
+    position: absolute;
+    top: 65px;
+    right: 89px;
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 15px;
+    margin-left: 70px;
+  }
+}
+.box-subscription {
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+    margin-left: 93px;
+    flex-direction: row;
+  }
+}
+.page-footer__headlines {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  @media screen and (max-width: $desktop-1) {
+    text-align: center;
+  }
+}

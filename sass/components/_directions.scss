@@ -1,0 +1,31 @@
+.direction {
+  @media screen and (max-width: $desktop-1) {
+    display: none;
+  }
+  & .container {
+    padding-top: 0;
+  }
+}
+.directions {
+  display: flex;
+}
+.directions__item:not(:last-child) {
+  margin-right: 30px;
+}
+.directions__image {
+  position: relative;
+}
+.directions__tytle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  background-color: $color-background-fone-directions;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+}

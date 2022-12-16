@@ -1,0 +1,109 @@
+.form__field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin-bottom: 10px;
+}
+.form__label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: $color-text;
+
+  &--policy {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__input {
+  padding: 11px 12px 11px 42px;
+
+  border: 1px solid $color-border-inpur-modal;
+  border-radius: 4px;
+
+  transition: border $time-hover $time-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-accent;
+    border-radius: 4px;
+
+    cursor: pointer;
+    outline: 0;
+  }
+
+  &:hover + .form__icon,
+  &:focus + .form__icon {
+    fill: $color-accent;
+  }
+}
+.form__icon {
+  position: absolute;
+  display: inline-block;
+
+  bottom: 11px;
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+
+  fill: $color-header;
+  transition: fill $time-hover $time-function;
+}
+.form__comment {
+  height: 120px;
+  resize: none;
+  padding: 12px;
+  margin-bottom: 20px;
+
+  border: 1px solid $color-border-inpur-modal;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $color-text;
+    transition: color $time-hover $time-function;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid $color-accent;
+    transition: border $time-hover $time-function;
+
+    outline: 0;
+  }
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: $color-accent;
+  }
+}
+.form__policy {
+  margin-bottom: 30px;
+}
+
+.form__agreement {
+  font-weight: 400;
+
+  @media screen and (max-width: $desktop-1) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: $desktop-1) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  color: $color-text;
+  letter-spacing: 0.03em;
+}
+.form__link--policy {
+  color: $color-accent;
+  text-decoration: underline;
+}

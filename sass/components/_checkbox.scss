@@ -1,0 +1,21 @@
+.form__checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid $color-header;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+  &--before {
+    margin-right: 8px;
+  }
+  .checkbox:checked + & {
+    background-color: $color-accent;
+    border: 0;
+    background-image: url(../images/icon-check.svg);
+  }
+}

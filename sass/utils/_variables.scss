@@ -1,0 +1,54 @@
+// Цвета в проекте
+// цвет основного текста #212121
+// цвет дополнительного текста #757575
+//  background основной: #F5F5F5;
+//  #2196F3 100% синий и акцент
+//  background hero и footter: #2F303A;
+//  цвет white:  #FFFFFF;
+// цвет ссілок  в footer: rgba(255, 255, 255, 0.6);
+// цвет фона кнопок портфолио и преимуществ #F5F4FA
+// цвет black #000000
+// цвет рамки портфолио #EEEEE
+// цвет нижней рамки хэдера #ECECEC 1px
+// цвет иконок team  #AFB1B8
+// фоновый цвет иконок футера rgba(255, 255, 255, 0.1)
+// фоновый цвет текста в секции чем мы занимаемся rgba(47, 48, 58, 0.8)
+// цвет оверлея портфолио rgba(33, 150, 243, 0.9)
+// время перехода ховера и фокуса 250ms
+//  функция распределения времени cubic-bezier(0.4, 0, 0.2, 1)
+// цвет backdrop rgba(0, 0, 0, 0.2)
+// цвет кнопки закрытия модалки rgba(0, 0, 0, 0.1)
+// цвет тени кнопки подписаться rgba(0, 0, 0, 0.15)
+// цвет рамки input и comment  rgba(33, 33, 33, 0.2)
+// цвет кнопки submit при ховере #188ce8
+$color-header: #212121;
+$color-text: #757575;
+$color-accent: #2196f3;
+$color-background: #f5f5f5;
+$color-background-footer: #2f303a;
+$color-white: #ffffff;
+$color-address-footer: rgba(255, 255, 255, 0.6);
+$color-background-button-portfolio: #f5f4fa;
+$color-black: #000000;
+$color-border-card-portfolio: #eeeeee;
+$color-border-botton-header: #ececec;
+$color-icon-team: #afb1b8;
+$color-background-icon-footer: rgba(255, 255, 255, 0.1);
+$color-background-fone-directions: rgba(47, 48, 58, 0.8);
+$color-overlay-portfolio: rgba(33, 150, 243, 0.9);
+$color-backdrop: rgba(0, 0, 0, 0.2);
+$color-border-close-modal: rgba(0, 0, 0, 0.1);
+$color-shadow-submit: rgba(0, 0, 0, 0.15);
+$color-border-inpur-modal: rgba(33, 33, 33, 0.2);
+$color-button-press-modal: #188ce8;
+//   временніе функции
+$time-hover: 250ms;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+//-----------------------------------------------
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$tablet-1: 767px;
+$desktop-1: 1199px;

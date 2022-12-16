@@ -1,0 +1,23 @@
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.address__link {
+  display: inline-block;
+
+  color: $color-address-footer;
+  margin-bottom: 12px;
+  transition: color $time-hover $time-function;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+}
+
+.address__link--last {
+  margin-bottom: 0px;
+}
