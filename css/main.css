@@ -831,7 +831,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow-y: auto;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px;
@@ -841,6 +840,11 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    overflow-y: auto;
+  }
 }
 @media screen and (max-width: 1199px) {
   .modal {
