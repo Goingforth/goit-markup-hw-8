@@ -33,12 +33,15 @@
 .menu-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-x: auto;
   padding: 48px 40px;
   background-color: $color-white;
   z-index: 999;
@@ -65,7 +68,7 @@
 }
 .mobile-menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.02em;
 
@@ -89,7 +92,7 @@
 }
 .mobile-connection__phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $color-accent;
@@ -105,6 +108,7 @@
 .mobile-social {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .mobile-social__item:not(:last-child) {
   border-right: 1px solid $color-border-inpur-modal;
